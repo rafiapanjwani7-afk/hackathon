@@ -1,0 +1,322 @@
+:root {
+    --bs-primary: #0066ff;
+    /* Brand Blue */
+    --bs-body-font-family: 'Inter', sans-serif;
+    --bs-heading-color: #111827;
+    --bs-bg-muted:#666;
+}
+
+body {
+    background-color: #f9fafb;
+    /* Light gray background/header area seems to have it */
+    overflow-x: hidden;
+}
+
+/* Navbar Tweaks */
+.navbar {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    background-color: transparent !important;
+    /* Let body bg show through or handle specific header bg */
+}
+
+.navbar-brand span {
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.nav-link {
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.btn-cta {
+    background-color: var(--bs-primary);
+    border-radius: 6px;
+    font-weight: 600;
+    padding: 0.6rem 1.25rem;
+}
+
+/* Hero Section */
+.custom-padding-top {
+    padding-top: 120px;
+    /* Space for fixed navbar */
+    padding-bottom: 80px;
+}
+
+.hero-title {
+    font-weight: 900;
+    letter-spacing: -1.5px;
+    line-height: 1.1;
+    color: #111827;
+}
+
+.highlight {
+    background: #ffdb0e;
+    /* Yellow highlight */
+    padding: 0 4px;
+}
+
+.hero-subtitle {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    max-width: 500px;
+}
+
+.email-form {
+    max-width: 480px;
+}
+
+.email-form .form-control {
+    border-radius: 6px;
+    border: 1px solid #d1d5db;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+}
+
+.email-form .btn {
+    border-radius: 6px;
+    border: none;
+    font-weight: 600;
+}
+
+.trusted-by {
+    border-top: 1px solid #e5e7eb;
+}
+
+.trusted-by p {
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+}
+
+.logos-container img {
+    filter: grayscale(100%);
+    opacity: 0.6;
+    transition: all 0.3s;
+}
+
+.logos-container span {
+    color: #6b7280;
+}
+
+/* Visual Stack on Right */
+.hero-visuals {
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.visual-stack-container {
+    position: relative;
+    width: 320px;
+    height: 550px;
+}
+
+.story-card-main {
+    width: 300px;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    z-index: 10;
+    border-radius: 12px;
+    overflow: hidden;
+    transform: rotate(-2deg);
+    border: 4px solid #10b981;
+    /* Green border for active */
+}
+
+.story-card-bg-1 {
+    width: 280px;
+    position: absolute;
+    top: 20px;
+    left: 140px;
+    z-index: 5;
+    border-radius: 12px;
+    transform: rotate(5deg);
+    opacity: 0.9;
+}
+
+/* Cursors/Badges */
+.cursor-badge {
+    z-index: 20;
+    font-size: 0.85rem;
+    pointer-events: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15) !important;
+}
+
+.cursor-maheen {
+    bottom: -40px;
+    left: -80px;
+    transform: rotate(-5deg);
+    border: 1px solid #eee;
+}
+
+.cursor-warisha {
+    top: 150px;
+    right: -100px;
+    background: #ec4899;
+    /* Pink */
+}
+
+/* Features Section */
+.feature-list .feature-item {
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.feature-list .feature-item:hover:not(.feature-item-active) {
+    background-color: #f3f4f6;
+    color: #111827 !important;
+}
+
+.feature-item-active {
+    background-color: #eff6ff !important;
+    /* Light blue */
+    color: var(--bs-primary) !important;
+}
+
+.feature-item-active i {
+    color: var(--bs-primary);
+}
+
+.browser-mockup {
+    border: 1px solid #e5e7eb;
+}
+
+
+.browser-header .dot {
+    opacity: 0.8;
+}
+
+/* Platform Section */
+.bg-eff2f6 {
+    background-color: #eff2f6;
+    /* Light blue-gray background matching the image */
+}
+
+.platform-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.platform-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Video Testimonial Section */
+.play-button-overlay:hover {
+    transform: translate(-50%, -50%) scale(1.1) !important;
+}
+
+.insta-gradient {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fs-7 {
+    font-size: 0.9rem;
+}
+
+/* Benefits Section */
+.benefit-card {
+    background-color: #f3f4f6;
+    /* Ensure this matches the design's light gray/blue */
+    border: 1px solid transparent;
+}
+
+
+/* Customization Section */
+.custom-chip {
+    transition: background-color 0.2s;
+    cursor: default;
+}
+
+.custom-chip:hover {
+    background-color: #e5e7eb !important;
+    /* Slightly darker gray on hover */
+}
+
+/* Dashboard Mockup */
+.w-20 {
+    width: 20px;
+    text-align: center;
+}
+
+/* Installation Section */
+.cursor-pointer {
+    cursor: pointer;
+}
+
+
+.font-serif {
+    font-family: 'Playfair Display', serif;
+    /* Or basic serif if not imported */
+    font-family: serif;
+}
+
+/* Templates Section */
+.bg-dark-custom {
+    background-color: #111827;
+    /* Dark slate*/
+}
+
+.template-card {
+    transition: transform 0.3s ease;
+}
+
+.template-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Feature Cards */
+.feature-card {
+    transition: border-color 0.2s, transform 0.2s;
+}
+
+.feature-card:hover {
+    border-color: var(--bs-primary) !important;
+    transform: translateY(-5px);
+}
+
+/* Integrations Section */
+.platform-item::before {
+    /* Horizontal connector lines */
+    content: '';
+    position: absolute;
+    left: -26px;
+    /* 24px padding + 2px border */
+    top: 50%;
+    width: 26px;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Customer Reviews Section */
+.review-card {
+    transition: transform 0.2s;
+    border-color: #f3f4f6 !important;
+}
+
+.review-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+}
+
+/* Platform Highlight Section */
+.highlight-yellow {
+    background-color: #ffeb3b;
+    transform: rotate(-1deg);
+    display: inline-block;
+}
+
+/* Pricing Section */
+/* Most styles handled by Bootstrap utilities */
+
+/* Footer Section */
+.footer-link:hover {
+    color: #fff !important;
+}
